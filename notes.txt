@@ -1,0 +1,5 @@
+Questions:
+    Instead of gradient descend, can I try "trading": 
+        Increase the price when there is shortage
+        Decrease the price when there is surplus? 
+        (Kinda treating the Excess Demand vector as the gradient for p)
