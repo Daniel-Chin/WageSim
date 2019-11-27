@@ -3,3 +3,11 @@ Questions:
         Increase the price when there is shortage
         Decrease the price when there is surplus? 
         (Kinda treating the Excess Demand vector as the gradient for p)
+
+Things to think:
+    Is there a way to avoid Walras's Law? 
+    Does pure supply of labor break Walras's law? 
+    How to visualize? Think animation. 
+
+Notes
+    Capital good can be modelled as A_j = B_j * (1+depreciation)
