@@ -1,4 +1,5 @@
 % A day in the economy
+close all;
 
 % produce
 supply = B .* r;
@@ -8,6 +9,7 @@ i = 0;
 stride = .1;
 problems = ones(1, N_GOOD);
 old_r = r;
+max_excess = 0; max_p = 0;
 while true
   i = i + 1;
   income = sum(supply .* p, 2);
@@ -27,10 +29,15 @@ while true
   nudge = excess_demand / norm(excess_demand);
   p = max(0, p + nudge * stride);
   p = p / sum(p);
-  % bar(max(0, excess_demand));
-  % axis([0 N_GOOD 0 10]);
-  % title('Excess Demand');
-  % pause(.01);
+  if i > 5000
+    max_excess = max(max_excess, max(excess_demand));
+    max_p = max(max_p, max(p));
+    bar([excess_demand / max_excess; p / max_p]');
+    axis([.5, N_GOOD+.5, -.1, 1]);
+    title('Invisible hand falls into a loop');
+    legend('Excess Demand', 'Prices');
+    pause(.05);
+  end
 end
 fprintf('It took %d strides for the market to converge\n', i);
 
