@@ -5,7 +5,7 @@ supply = B .* r;
 
 % exchange
 i = 0;
-stride = 1;
+stride = .1;
 problems = ones(1, N_GOOD);
 old_r = r;
 while true
@@ -27,6 +27,10 @@ while true
   nudge = excess_demand / norm(excess_demand);
   p = max(0, p + nudge * stride);
   p = p / sum(p);
+  % bar(max(0, excess_demand));
+  % axis([0 N_GOOD 0 10]);
+  % title('Excess Demand');
+  % pause(.01);
 end
 fprintf('It took %d strides for the market to converge\n', i);
 
