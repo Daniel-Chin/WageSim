@@ -60,4 +60,6 @@ THE INVISIBLE HAND CAN FAIL
         Excess demand repeats itself.
     Fix:
         Detect a loop and randomize `p`
-        Fourier transform??
+    Update:
+        When invisible hand fails, randomizing `p` does not solve the problem.
+        And it's always the same loop
