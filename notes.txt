@@ -14,7 +14,7 @@ Things to think:
         Visualize! capital-intensiveness score, labor score
 
 Notes
-    Each process produces one thing, take all things, and require some capital goods. 
+    Each process produces mainly one thing, take all things, and require some capital goods. 
     Capital good can be modelled as B_j = A_j * (1-depreciation)
 
 Visuals:
@@ -25,3 +25,26 @@ Visuals:
     Unemployment
     GDP (price * production)
     Job Distribution
+
+Stride Descend
+    First Algo:
+        Move in the direction of excess_demand
+        If a good turns from excess supply to excess demand, that's a fail. Otherwise, success. 
+        if success, Stride length *= 1.1 
+        if fail, Stride length *= 0.5 
+        if fail, The stride is NOT taken 
+        Result:
+            Does not work. 
+            Algorithm can be stuck with 2 goods competing.
+            Good A excess_demand = 0, Good B excess_demand > 0, 
+            but raising the price of B will increase good A excess_demand. 
+    Second Algo:
+        if fail, The stride IS TAKEN 
+        Result:
+            Success!!!
+
+Mass death
+    Because every process only produce 1 single good, 
+    As long as a good becomes free good, those processes die. 
+    After they die, the world realizes they are not free after all.
+    
