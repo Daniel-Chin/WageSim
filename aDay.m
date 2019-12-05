@@ -7,6 +7,7 @@ supply = B .* r;
 i = 0;
 stride = 1;
 problems = ones(1, N_GOOD);
+old_r = r;
 while true
   i = i + 1;
   income = sum(supply .* p, 2);
@@ -27,7 +28,10 @@ while true
   p = max(0, p + nudge * stride);
   p = p / sum(p);
 end
+fprintf('It took %d strides for the market to converge\n', i);
 
 % just to check that goods with excess supply are free
 assert(all(p .* excess_demand <= MINIMA_QUALITY));
-disp(sprintf('It took %d strides for the market to converge\n', i));
+
+% sticky r, to avoid stiffness
+r = [old_r, r] * R_STICKY;

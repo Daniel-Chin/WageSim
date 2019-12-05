@@ -47,4 +47,11 @@ Mass death
     Because every process only produce 1 single good, 
     As long as a good becomes free good, those processes die. 
     After they die, the world realizes they are not free after all.
+    Fix: let processes produce a little bit of everything 
+
+Stiff market
+    Similar to mass death. 
+    Fix: sticky r
+
+THE INVISIBLE HAND CAN FAIL
     
