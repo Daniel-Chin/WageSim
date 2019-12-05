@@ -8,6 +8,20 @@ Things to think:
     Is there a way to avoid Walras's Law? 
     Does pure supply of labor break Walras's law? 
     How to visualize? Think animation. 
+    When population is constant:
+        at the beginning, capital is low, processes that are labor-intensive grow. 
+        Later, Capital accumulates, and the population constraint becomes prominant, so the world now favors capital-intensive processes. 
+        Visualize! capital-intensiveness score, labor score
 
 Notes
-    Capital good can be modelled as A_j = B_j * (1+depreciation)
+    Each process produces one thing, take all things, and require some capital goods. 
+    Capital good can be modelled as B_j = A_j * (1-depreciation)
+
+Visuals:
+    Process intensity
+    Price
+    Population
+    Wages
+    Unemployment
+    GDP (price * production)
+    Job Distribution
