@@ -54,6 +54,7 @@ Stiff market
     Fix: sticky r
 
 THE INVISIBLE HAND CAN FAIL
+    (Invisible hand method = moving along equation 16 in Peskin notes)
     Run code at commit 6147350286fb59406d153d000e4ce7e4d1d93c16
     Load invisibleHandFail.mat
     Analysis:
@@ -68,3 +69,12 @@ THE INVISIBLE HAND CAN FAIL
 
 Trying negative prices
     cost of a process can be $0 when prices are right!
+
+Labor constrain:
+    unifromly scale entire economy according to labor
+    Just treat it as a capital good that doesn't depreciate
+
+After Guanghua Suggestion:
+    Labor is a capital good. Growth is determined by "depreciation" factor. 
+    We can add or subtract labor from the market freely! 
+    Welcome back, Walras's Law. 
