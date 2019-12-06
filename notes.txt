@@ -65,3 +65,6 @@ THE INVISIBLE HAND CAN FAIL
         And it's always the same loop no matter how you randomize.
     Fix:
         Maybe we gotta model labor in a way so that Walras still holds
+
+Trying negative prices
+    cost of a process can be $0 when prices are right!
