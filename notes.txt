@@ -62,4 +62,6 @@ THE INVISIBLE HAND CAN FAIL
         Detect a loop and randomize `p`
     Update:
         When invisible hand fails, randomizing `p` does not solve the problem.
-        And it's always the same loop
+        And it's always the same loop no matter how you randomize.
+    Fix:
+        Maybe we gotta model labor in a way so that Walras still holds
