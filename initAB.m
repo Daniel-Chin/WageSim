@@ -6,7 +6,7 @@ B = zeros(N_PROCESS, N_GOOD);
 for i = 1 : N_PROCESS
   for j = 1 : N_GOOD
     A(i, j) = floor(rand * 10) + 1;
-    B(i, j) = 1;
+    % B(i, j) = 1 * n_consumer_good * BLESS;
   end
   for j = 1 : n_capital_good
     B(i, j) = A(i, j) * DEPRECIATION;
@@ -14,3 +14,8 @@ for i = 1 : N_PROCESS
   product = floor(rand * N_GOOD) + 1;
   B(i, product) = floor(rand * 10 * n_consumer_good * BLESS) + 1;
 end
+
+C = B - A;
+fprintf('AB Quality = %f\n', mean( ...
+  C(:, n_capital_good+1 : n_capital_good+n_consumer_good), 'all' ...
+) / N_PROCESS / n_consumer_good);
