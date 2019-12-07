@@ -1,0 +1,8 @@
+        Stiff           OK
+boring  123456          1234
+boring' 123456          1
+cpital  12
+
+boring: randomly init AB; lower capital goods in B to 90%
+boring': same as boring, but each process has 50% chance to randomly select a capital good and += rand * constants in B
+capital: All capital goods in B is 90% of A, but each process has 50% chance to randomly select a capital good and += rand * constants in B
