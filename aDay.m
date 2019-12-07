@@ -33,8 +33,4 @@ end
 [excess_demand, new_r] = trade(p, supply, A);
 
 % sticky r, to avoid stiffness
-new_r = [r, new_r] * R_STICKY;
-
-new_r = max(.001 / N_PROCESS, new_r + last_delta * R_MOMENTUM);
-last_delta = new_r - r;
-r = new_r;
+r = [r, new_r] * R_STICKY;
