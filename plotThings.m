@@ -2,17 +2,12 @@ LINEWIDTH = 1.5;
 SHIFT = 3;
 
 hold off;
-plot(sum_r_history + SHIFT, 'linewidth', LINEWIDTH);
+hh = [];
+hh(1) = plot(sum_r_history + SHIFT, 'DisplayName', 'sum(r)', 'linewidth', LINEWIDTH);
 hold on;
-plot(capital_GDP_history + SHIFT, 'linewidth', LINEWIDTH);
-plot(consumer_GDP_history + SHIFT, 'linewidth', LINEWIDTH);
-plot(structural_change_history * 10 + 1, 'linewidth', LINEWIDTH)
-area(p_history);
-legend( ...
-  'r', ...
-  'capital GDP', ...
-  'consumer GDP', ...
-  'Structural Change', ...
-  'Prices' ...
-);
-axis([0 length(sum_r_history) 0 6]);
+hh(2) = plot(capital_GDP_history + SHIFT, 'DisplayName', 'capital GDP', 'linewidth', LINEWIDTH);
+hh(3) = plot(consumer_GDP_history + SHIFT, 'DisplayName', 'consumer GDP', 'linewidth', LINEWIDTH);
+hh(4) = plot(structural_change_history * 10 + 1, 'DisplayName', 'structural change', 'linewidth', LINEWIDTH);
+hh(4+1:4+N_GOOD) = area(p_history);
+legend(hh(1:4), 'Location', 'northwest');
+axis([0 length(sum_r_history) 0 5]);
