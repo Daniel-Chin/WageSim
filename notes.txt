@@ -1,12 +1,7 @@
 Questions:
-    Instead of gradient descend, can I try "trading": 
-        Increase the price when there is shortage
-        Decrease the price when there is surplus? 
-        (Kinda treating the Excess Demand vector as the gradient for p)
+    MATLAB 2 y axes
 
 Things to think:
-    Is there a way to avoid Walras's Law? 
-    Does pure supply of labor break Walras's law? 
     How to visualize? Think animation. 
     When population is constant:
         at the beginning, capital is low, processes that are labor-intensive grow. 
@@ -78,3 +73,7 @@ After Guanghua Suggestion:
     Labor is a capital good. Growth is determined by "depreciation" factor. 
     We can add or subtract labor from the market freely! 
     Welcome back, Walras's Law. 
+
+Visuals:
+    stack(prices)
+    plot(consumerGDP, capitalGDP, sum(r), ..., population)
