@@ -1,6 +1,6 @@
 close all;
 
-SEC_PER_FRAME = 2;
+SEC_PER_FRAME = 1;
 
 initRP();
 p_history = [];
@@ -19,14 +19,14 @@ test_i = 0;
 while test_i < test_i_max
   batch_i = 0;
   while now - last_plot_time < SEC_PER_FRAME * .00001
-    if test_i > 45
+    if test_i > 80
       % R_STICKY = [.5 .5]';
     end
-    if test_i > 55
+    if test_i > 90
       % R_STICKY = saved_R_STICKY;
     end
-    if test_i > 80
-      % R_STICKY = [.8 .2]';
+    if test_i > 140
+      % R_STICKY = [.5 .5]';
     end
     if test_i > 100
       % R_STICKY = saved_R_STICKY;
