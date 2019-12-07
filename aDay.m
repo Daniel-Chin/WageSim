@@ -2,6 +2,9 @@
 
 supply = B .* r;
 sum_r = sum(r);
+% if test_i == 100
+%   supply(:, N_GOOD-N_LABOR+1 : N_GOOD) = supply(:, N_GOOD-N_LABOR+1 : N_GOOD) / 2;
+% end % Thanos
 
 fun = @(x)(norm(max(0, ...
   trade(x .^ 2, supply, A) ...

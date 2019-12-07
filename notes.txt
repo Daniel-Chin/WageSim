@@ -88,3 +88,6 @@ using boring setup:
 
 fval gradually increases
     Ah! Cuz fval is prop to norm(r)!!
+
+Presentation:
+    Start by saying greatly influenced by Solow model

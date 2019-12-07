@@ -19,6 +19,10 @@ test_i = 0;
 while test_i < test_i_max
   batch_i = 0;
   while now - last_plot_time < SEC_PER_FRAME * .00001 || batch_i == 0
+    % if test_i == 100
+    %   pop_growth = 1.07;
+    %   updatePopGrowth;
+    % end % Family planning
     test_i = test_i + 1;
     batch_i = batch_i + 1;
     p_array(batch_i, :) = p;
