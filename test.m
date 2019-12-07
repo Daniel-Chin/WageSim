@@ -8,7 +8,7 @@ sum_r_history = [];
 capital_GDP_history = [];
 consumer_GDP_history = [];
 structural_change_history = [];
-while true
+for test_i = 1 : test_i_max / BATCH
   p_array = zeros(BATCH, N_GOOD);
   sum_r_array = zeros(BATCH, 1);
   capital_GDP_array = zeros(BATCH, 1);
