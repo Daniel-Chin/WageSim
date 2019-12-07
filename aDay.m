@@ -28,7 +28,7 @@ while true
 end
 p = q .^ 2;
 if i > 1
-  fprintf('Solved with i = %d\n', i);
+  % fprintf('Solved with i = %d\n', i);
 end
 [excess_demand, new_r] = trade(p, supply, A);
 
