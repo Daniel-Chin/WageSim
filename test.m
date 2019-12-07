@@ -14,9 +14,30 @@ sum_r_array = zeros(BATCH, 1);
 capital_GDP_array = zeros(BATCH, 1);
 consumer_GDP_array = zeros(BATCH, 1);
 structural_change_array = zeros(BATCH, 1);
-for test_i = 1 : test_i_max
+R_STICKY = saved_R_STICKY;
+test_i = 0;
+while test_i < test_i_max
   batch_i = 0;
   while now - last_plot_time < SEC_PER_FRAME * .00001
+    if test_i > 45
+      % R_STICKY = [.5 .5]';
+    end
+    if test_i > 55
+      % R_STICKY = saved_R_STICKY;
+    end
+    if test_i > 80
+      % R_STICKY = [.8 .2]';
+    end
+    if test_i > 100
+      % R_STICKY = saved_R_STICKY;
+    end
+    if test_i > 130
+      % R_STICKY = [.8 .2]';
+    end
+    if test_i > 140
+      % R_STICKY = saved_R_STICKY;
+    end
+    test_i = test_i + 1;
     batch_i = batch_i + 1;
     p_array(batch_i, :) = p;
     sum_r_array(batch_i) = log(sum(r));
