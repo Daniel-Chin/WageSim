@@ -77,3 +77,8 @@ After Guanghua Suggestion:
 Visuals:
     stack(prices)
     plot(consumerGDP, capitalGDP, sum(r), ..., population)
+
+Structural change
+
+Momentum
+
