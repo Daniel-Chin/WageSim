@@ -13,7 +13,7 @@ while true
   end
   p_history = cat(1, p_history, p_array);
   plotP
-  disp('Press Enter...');
+  % disp('Press Enter...');
   % pause
   pause(.1)
 end
