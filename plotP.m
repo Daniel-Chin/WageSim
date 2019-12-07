@@ -1,1 +1,0 @@
-area(p_history);
