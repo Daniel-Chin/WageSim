@@ -20,7 +20,7 @@ while true
     a, b, Aeq, beq, lb, ub, @sphereConstraint, optimset('Display', 'off') ...
   );
   if fval < LOSS_TOLERANCE
-    fprintf('success, fval = %d\n', fval);
+    % fprintf('success, fval = %d\n', fval);
     break;
   end
   fprintf('fmincon fails with exitflag = %d, fval = %f\n', exitflag, fval);
