@@ -34,3 +34,10 @@ end
 
 % sticky r, to avoid stiffness
 r = [r, new_r] * R_STICKY;
+
+random_walk = rand(N_PROCESS, 1) - .5;
+if norm(random_walk) > 0
+  random_walk = random_walk / norm(random_walk);
+  random_walk = norm(r) * random_walk * RANDOM_WALK_STRIDE;
+  r = r + random_walk;
+end
