@@ -1,10 +1,11 @@
 % A day in the economy
 
 supply = B .* r;
+sum_r = sum(r);
 
 fun = @(x)(norm(max(0, ...
   trade(x .^ 2, supply, A) ...
-)));
+) / sum_r) ^ 2);
 q = sqrt(p);
 a = []; b = [];
 Aeq = []; beq = [];

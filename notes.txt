@@ -85,4 +85,6 @@ Momentum
 using boring setup:
     Always encounter more local minima when t > 100
     if not sticky, stiff at t=80
-    fval gradually increases
+
+fval gradually increases
+    Ah! Cuz fval is prop to norm(r)!!
