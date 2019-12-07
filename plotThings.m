@@ -1,14 +1,18 @@
+LINEWIDTH = 1.5;
+SHIFT = 3;
+
 hold off;
-plot(sum_r_history);
+plot(sum_r_history + SHIFT, 'linewidth', LINEWIDTH);
 hold on;
-% plot(capital_GDP_history);
-plot(consumer_GDP_history);
-plot(structural_change_history * 10 + 1)
+plot(capital_GDP_history + SHIFT, 'linewidth', LINEWIDTH);
+plot(consumer_GDP_history + SHIFT, 'linewidth', LINEWIDTH);
+plot(structural_change_history * 10 + 1, 'linewidth', LINEWIDTH)
 area(p_history);
 legend( ...
   'r', ...
+  'capital GDP', ...
   'consumer GDP', ...
   'Structural Change', ...
   'Prices' ...
 );
-  % 'capital GDP', ...
+axis([0 length(sum_r_history) 0 6]);
