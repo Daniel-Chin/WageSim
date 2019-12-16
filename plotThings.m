@@ -23,5 +23,5 @@ hh(2) = plot(transformPlot(GDP_history), 'g', 'DisplayName', 'GDP', 'linewidth',
 hh(3) = plot(structural_change_history * 10 + 1, 'k--', 'DisplayName', 'structural change', 'linewidth', LINEWIDTH);
 hh(4) = plot(transformPlot(population_history), 'r:', 'DisplayName', 'population', 'linewidth', LINEWIDTH);
 % hh(5) = plot(transformPlot(capital_GDP_history), 'r', 'DisplayName', 'capital GDP', 'linewidth', LINEWIDTH);
-legend(hh(1 : 4+N_LABOR), {'sum(r)', 'GDP', 'structural change', 'population', 'Farm Labor','Factory Labor','IT Labor'}, 'Location', 'northwest');
+legend(hh(1 : 4+N_LABOR), {'sum(r)', 'GDP', 'structural change', 'population', 'Farm Labor','Factory Labor','IT Labor'}, 'Location', 'northeast');
 axis([0, length(sum_r_history), 0, 2]);

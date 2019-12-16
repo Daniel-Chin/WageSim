@@ -1,5 +1,4 @@
 Questions:
-    MATLAB 2 y axes
 
 Things to think:
     How to visualize? Think animation. 

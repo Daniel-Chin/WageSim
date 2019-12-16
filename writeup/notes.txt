@@ -1,0 +1,8 @@
+Future work:
+    AI replaces human labor? 
+    Finite natural resources?
+    invisibleHandFail?
+    When population is constant:
+        at the beginning, capital is low, processes that are labor-intensive grow. 
+        Later, Capital accumulates, and the population constraint becomes prominant, so the world now favors capital-intensive processes. 
+        Visualize! capital-intensiveness score, labor score
